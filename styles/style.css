@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+:root {
+    --cor-primaria: #1B262C;
+    --cor-secundaria: #BBE1FA;
+    --cor-terciaria: #0F4C75;
+    --cor-hover: #3282B8;
+
+    --font-primaria: "Krona One", sans-serif;
+    --font-secundaria: "Montserrat", sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 22%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+    
+}
+
+.cabecalho__menu__link {
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao {
+    box-sizing: border-box;
+    display: flex;
+    padding: 8% 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--font-primaria);
+}
+
+.apresentacao__conteudo__subtitulo {
+    font-size: 2rem;
+    font-family: var(--font-primaria);
+    color: var(--cor-terciaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--font-secundaria);
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.habilidade-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5em; /* Espaço entre cada habilidade */
+}
+
+.habilidades-tecnicas {
+    font-size: 2em;
+    margin-right: 1em; /* Espaço entre o texto e a imagem */
+}
+
+.habilidades-tecnicas-logos {
+    width: 3em; /* Tamanho da imagem do logo */
+    height: auto;
+}
+.notas {
+    font-size: 1em;
+    color: var(--cor-terciaria)
+}
+
+.apresentacao__conteudo__resumo {
+    display: flex;
+    font-family: var(--font-secundaria);
+    color: var(--cor-secundaria);
+    font-size: 2rem;
+    width: 100vh;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__botoes {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 4em;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+    font-weight: 600;
+}
+
+.apresentacao__links__botoes:hover {
+    background-color: var(--cor-hover);
+}
+
+.apresentacao__imagem {
+    width: 50%;
+    opacity: 0.7;
+    padding: 0em 10em;
+    border-radius: 30px;
+}
+
+.apresentacao__imagem__sobremim {
+    width: 50%;
+}
+
+.contato {
+    font-family: var(--font-primaria);
+    color: var(--cor-secundaria);
+    font-size: 1.5rem;
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.Link__rodape {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.Link__rodape:hover {
+    color: var(--cor-terciaria);
+    background-color: var(--cor-primaria)
+}
+
+.pdf-certificados {
+    width: 2em;
+    height: 2em;
+    
+}
+
+.texto-pdf{
+    font-size: 1em;
+    padding: 0.9em 3em;
+}
+
+.cf-fiap {
+    font-size: 1.5em;
+    height: 2em;
+}
+
+.cf-fiap-texto {
+    font-size: 0.89em;
+    padding-bottom: 0.5em;
+    padding-top: 0.4;
+}
+
+@media (max-width: 428px) {
+    
+    .apresentacao {
+        align-items: center;
+        padding: 2em 0.1em;
+    }
+
+    .apresentacao__imagem{
+        width: 150px;
+    }
+
+    .apresentacao__conteudo {
+        align-items: center;
+    }
+
+    .apresentacao__conteudo__titulo{
+        font-size: 25px;
+        
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 16px;
+    }
+
+    .habilidades-tecnicas {
+        font-size: 1.2em;
+    }
+
+    .apresentacao__imagem__sobremim {
+        display: none;
+    }
+
+    .apresentacao__links__botoes {
+        width: 30%;
+    }
+
+    .apresentacao__conteudo__resumo {
+        width: 90%;
+        font-size: 15px;
+    }
+    
+    .contato {
+        display: none;
+    }
+
+    .cabecalho {
+        padding-left: 3em;
+    }
+
+    .cf-fiap-texto {
+        font-size: 0.5em;
+    }
+
+    .texto-pdf {
+        font-size: 0.5em;
+        width: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .cabecalho {
+        padding-left: 30em;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+
+    .apresentacao__imagem{
+        width: 230px;
+    }
+}
+
